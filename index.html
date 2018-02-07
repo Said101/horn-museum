@@ -10,41 +10,59 @@
 </head>
 <body>
     <div class="wrapper">
-      <nav class="main-nav">
-        <a href="" class="logo">Horn Museum</a>
-        <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+
+            <nav class="main-nav">
+                <a href="" class="logo">Horn Museum</a>
+                <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
 
       <section class="hero">
-          <header class="header">
-              <h1>What Our Company Do</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, esse incidunt! Inventore.</p>
-          </header>
-          <div class="right-box">
-              <h2>Comming Events</h2>
-              <ul>
-                  <li>15 Jan</li1></li>
-                  <li>20 Feb</li1></li>
-                  <li>Abril</li1></li>
-              </ul>
-          </div>
+
+            <header class="header">
+                <h1>What Our Company Do</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, esse incidunt! Inventore.</p>
+            </header>
+
+            <div class="right-box"><!--right-box-->
+                <div class="right-box-a">
+                      <h2>Coming Events</h2>
+                      <ul>
+                          <li>15 Jan</li1></li>
+                          <li>20 Feb</li1></li>
+                          <li>Abril</li1></li>
+                      </ul>
+                </div>
+              
+                <div class="right-box-c">
+                      <h2>Tickets</h2>
+                      <p>Lorem ipsum dolor sit amet, <br>
+                        consectetur adipisicing <br>
+                      elit. Officia, maxime.</p>
+                      <button>Get One</button>
+                </div>
+          </div><!--end right box-->
+             
+                    
+      
           
       </section>
 
+      <h2 class="headling">This is The Headling of the Sections</h2>
+
       <section class="boxes">
-          <div class="box">
-                <i class="fas fa-chart-pie fa-4x"></i>
-              <h3>Tickets</h3>
+          <div class="box info">
+                <i class="fas fa-info-circle fa-4x"></i>
+              <h3>Info</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab repellendus eum in quibusdam, eaque perspiciatis?</p>
           </div>
           <div class="box">
-                <i class="fas fa-chart-pie fa-4x"></i>
-              <h3>Tickets</h3>
+                <i class="fas fa-puzzle-piece fa-4x"></i>
+              <h3>Sections</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab repellendus eum in quibusdam, eaque perspiciatis?</p>
           </div>
         
@@ -59,6 +77,7 @@
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab repellendus eum in quibusdam, eaque perspiciatis?</p>
           </div>
       </section>
+      <h2 class="headling">Services</h2>
       <section class="Sevices">
           <div class="service">
               <button>Service</button>
@@ -70,7 +89,9 @@
                 <button>Booking</button>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam officiis debitis consequuntur nisi reiciendis eaque deleniti tempora placeat incidunt!</p>
             </div>
-         </section>
+        </section>
+
+        <h2 class="headling">Our Top Collections</h2>
 
          <section class="portfolio">
                     <img src="https://source.unsplash.com/random/200x200" alt="">
@@ -79,40 +100,34 @@
                     <img src="https://source.unsplash.com/random/203x200" alt="">
                     <img src="https://source.unsplash.com/random/204x200" alt="">
                     <img src="https://source.unsplash.com/random/205x200" alt="">
-                    <img src="https://source.unsplash.com/random/206x200" alt="">
-                    <img src="https://source.unsplash.com/random/207x200" alt="">
+                   
+                   
     
          </section>
 
+         <h2 class="headling">Contact Info</h2>
+
          <section class="contact">
-             <div class="contact-info">
+             <div class="contact-text">
                  <h4>Contact Info</h4>
                  <address>
                      <p>Lorem ipsum dolor sit <br> amet, consectetur adipisicing <br> elit. Debitis magnam aperiam <br> sint culpa fugiat dicta.</p>
                  </address>
             </div>
-            <div class="contact-form">
-                <form>
-                    <label for="name">
-                      <input type="text" name="name" value="name" placeholder="Enter Your name">
-                    </label>
-                    <label for="email">
-                            <input type="email" name="email" value="emal" placeholder="Enter Your Email">
-                    </label>
-                    <label for="message">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-                    </label>
-                    <button type="submit">Submit</button>
-                </form>
+            <div id="map">
+               
             </div>
          </section>
 
          <footer>
-             <p>Company &copy; 2018</p>
+             <p>Horn Museum &copy; 2018</p>
          </footer>
 
 
     </div>
     
+   <script src="js/main.js"></script> 
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCX7--uqXChTG8C6LWc1IVc2jduyk2qQ8&callback=initMap"
+  type="text/javascript"></script>
 </body>
 </html>
