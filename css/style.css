@@ -5,7 +5,7 @@
     --grey: #9A9C9F;
     --light-green: #A4D0C4;
     --green: #72C4B9;
-    --shadow: 0 1px 5px  #9A9C9F;
+    --shadow: 1px 1px 3px #9A9C9F;
     --white: #fff;
     --footer-bg: #101C33;
 
@@ -25,6 +25,16 @@ body{
 
 img{
     max-width: 100%;
+}
+button{
+    display: block;
+    width: 190px;
+    background: var(--green);
+    padding: 9px;
+    border-radius: 9px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: var(--shadow)
 }
 .headling{
     font-size: 40px;
@@ -50,42 +60,44 @@ img{
     "logo logo  nav";
     color: var(--dark);
    
+    
+   
    
 }
 .logo{
     grid-area: logo;
-
-}
-.logo{
-   text-decoration: none;
+    text-decoration: none;
    color: var(--dark);
    font-size: 3rem;
    margin: 1rem 2rem;
    font-weight: bold;
    color: var(--grey);
+   text-shadow: var(--shadow);
+   
+
 
 }
+
 .nav{
     grid-area: nav;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     list-style: none;
-    margin: 20px 0 -30px 0;
-   padding: 0;
-}
-.nav li{
-  
-   
+    margin-bottom: 0;
+   padding-top: 20px;
 }
 
 .nav a{
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--dark);
     font-size: 20px;
+    padding: 10px 20px;
 }
 .nav a:hover{
     background: var(--dark);
     color: var(--light-green);
+    border-radius: 5px;
 }
 
 /* Hero */
@@ -97,21 +109,32 @@ img{
 }
 .header{
     grid-area: header;
-    
-    box-shadow: var(--shadow);
     background: url('../images/pexels-photo-375882.jpeg');
     background-size: cover;
     background-position: center;
-    box-shadow: var(--shadow);
     height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-shadow: var(--shadow);
+
 }
 .header h1{
-    font-size: 70px;
+    color: var(--white);
+    font-size: 4rem;
+    margin: -120px 0 0 40px;
+    padding: 0 20px 0;
     color: var(--white);
    
 }
 .header p{
+    font-size: 1.9rem;
+    margin: 0 0 0 40px;
     color: var(--white);
+    padding: 0 20px;
 
 }
 .right-box{
@@ -139,9 +162,6 @@ img{
     text-align: left;
     border-bottom: 1px solid var(--dark);
 }
-.right-box button{
-    
-}
 
 
 /* boxes */
@@ -159,8 +179,33 @@ img{
     color: var(--white);
     padding: 10px 5px;
 }
+.boxes button{
+    width: 120px;
+    background: transparent;
+    margin-left: 20px;
+}
 .boxes .info{
     background: var(--grey);
+}
+.boxes .info .fa-4x{
+    color: var(--light-green);
+}
+.boxes .art{
+    background: var(--light-green);
+}
+.boxes .ticket{
+    background: var(--light);
+    color: var(--dark);
+}
+.boxes .section{
+    background: var(--dark);
+    color: var(--white)
+}
+.boxes .section button{
+    color: var(--white);
+}
+.boxes .art .fa-4x{
+     color: var(--light);
 }
 
 /* Services */
@@ -179,10 +224,9 @@ img{
 }
 .service button{
     display: inline;
-    padding: 10px 40px;
     margin: 10px 20px;
-    border-radius: 5px;
-    background-color: var(--grey);
+  
+   
 }
 
 /* Portfolio */
@@ -198,6 +242,8 @@ img{
 }
 .contact-text{
     text-align: center;
+    line-height: 1.9;
+    font-size: 20px;
 }
 /* google map */
 
