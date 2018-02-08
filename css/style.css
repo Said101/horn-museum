@@ -145,7 +145,7 @@ button{
     
     
 }
-.right-box-a, .right-box-b, .right-box-c{
+.right-box-a, .right-box-b{
     box-shadow: var(--shadow);
    margin: 10px;
    padding: 30px;
@@ -262,3 +262,86 @@ footer{
     margin: 0;
 }
 
+@media(max-width: 500px){
+
+    body{
+   
+        margin: 20px;
+    }
+
+    .headling{
+        font-size: 30px;
+        color: var(--grey);
+       
+    }
+
+    /* main-nav */
+    .main-nav{
+        grid-template-areas: 
+        "logo"
+        "nav";
+        margin-top: -40px;
+    }
+    .logo{
+        margin: 0;
+       padding-top: 30px;
+    }
+   .nav{
+        margin: 0;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+       
+    }
+    .nav li {
+        margin: 0;
+        padding: 0 10px;
+    }
+  
+    .nav a{
+        margin: 0;
+        padding: 0;
+        background: none;
+        font-size: 16px;
+    }
+    .nav a:hover{
+        background: none;
+    }
+
+    /* hero */
+    .header{
+        height: 300px;
+    }
+    .header h1{
+       font-size: 2rem;
+      
+    }
+    .header p{
+        font-size: 1.3rem;
+        margin-top: 20px;
+     }
+    .hero {
+       grid-template-areas: 
+         "header"
+         "right-box"
+         ;
+         width: 100%;
+         margin: 0;
+         padding:0;
+    }
+    .right-box{
+        display: none;
+    }
+
+   .Sevices, .boxes, .contact{
+       
+        grid-template-columns: 1fr;
+    }
+    .portfolio{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .contact{
+        margin-top: -40px;
+    }
+   
+}
